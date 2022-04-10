@@ -1,0 +1,758 @@
+/* CSS cho toàn trang  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: auto;
+}
+
+
+/* CSS cho body tag */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    max-width: auto;
+}
+
+div {
+    display: block;
+}
+
+
+/* Background cho class header */
+
+.header {
+    background: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.header .row {
+    margin-top: 0px;
+}
+
+.container {
+    /* max-width: 1200px;
+    margin: auto;
+    padding: 0px 25px; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+
+/* chỉnh CSS cho navbar */
+
+nav {
+    flex: 1;
+    text-align: right;
+    margin: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    margin: 10px 10px 10px 0px;
+}
+
+nav ul li a img {
+    display: inline-flex;
+    margin-left: 0px;
+}
+
+nav ul li a form {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* css cho phần giỏ hàng */
+
+.number {
+    /* position: absolute; */
+    top: -25px;
+    left: -15px;
+    z-index: 20;
+    border-radius: 20px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    position: relative;
+    background: #ea1c00;
+}
+
+.navbar-top-header {
+    max-width: 24px;
+    margin-right: 8px;
+    max-height: 25px;
+}
+
+
+/* end css cho phần giỏ hàng */
+
+
+/* css cho menu produce */
+
+.listmenu {
+    display: flex;
+    text-align: left;
+}
+
+.listmenu li {
+    position: relative;
+    /* border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid; */
+}
+
+ul.row-listmenu {
+    border-style: solid;
+    height: 125px;
+}
+
+
+/* css cho phần list laptop */
+
+ul.sub-menu-laptop li {
+    border: solid 1px #333;
+    border-style: solid;
+}
+
+.listmenu ul.sub-menu-laptop {
+    position: absolute;
+    background-color: rgb(230, 230, 250);
+    padding: 0px;
+    list-style: none;
+    width: 200px;
+    display: none;
+}
+
+.listmenu li:hover ul.sub-menu-laptop {
+    display: block;
+    left: 125px;
+    border-top: 50px;
+}
+
+.listmenu ul.sub-menu-laptop a {
+    padding: 8px 15px;
+}
+
+.listmenu ul.sub-menu-laptop li:last-child a {
+    border: none;
+}
+
+.listmenu ul.sub-menu-laptop li:hover a {
+    border-bottom: 1px solid #ea1c00;
+}
+
+.listmenu ul.sub-menu-laptop ul.sub-menu-laptop {
+    left: 200px;
+}
+
+
+/* thiết lập border khi hover */
+
+.listmenu>li>a {
+    position: relative;
+}
+
+.listmenu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.listmenu>li:hover>a::before {
+    width: 0px;
+}
+
+
+/* end border khi hover */
+
+
+/* end css phần list laptop */
+
+
+/* css cho phần list Loa & Tai nghe */
+
+ul.sub-menu-loa-tainghe li {
+    border: solid 1px #333;
+    border-style: solid;
+}
+
+.listmenu ul.sub-menu-loa-tainghe {
+    position: absolute;
+    background-color: rgb(230, 230, 250);
+    padding: 0px;
+    list-style: none;
+    width: 200px;
+    display: none;
+}
+
+.listmenu li:hover ul.sub-menu-loa-tainghe {
+    display: block;
+    left: 125px;
+    border-top: 50px;
+}
+
+.listmenu ul.sub-menu-loa-tainghe a {
+    padding: 8px 15px;
+}
+
+.listmenu ul.sub-menu-loa-tainghe li:last-child a {
+    border: none;
+}
+
+.listmenu ul.sub-menu-loa-tainghe li:hover a {
+    border-bottom: 1px solid #ea1c00;
+}
+
+.listmenu ul.sub-menu-loa-tainghe ul.sub-menu-loa-tainghe {
+    left: 200px;
+}
+
+
+/* thiết lập border khi hover */
+
+.listmenu>li>a {
+    position: relative;
+}
+
+.listmenu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.listmenu>li:hover>a::before {
+    width: 0px;
+}
+
+
+/* end border khi hover */
+
+
+/* end css cho phần list Loa & Tai nghe */
+
+
+/* Css cho phần linh kiện */
+
+ul.sub-menu-linhkien li {
+    border: solid 1px #333;
+    border-style: solid;
+}
+
+.listmenu ul.sub-menu-linhkien {
+    position: absolute;
+    background-color: rgb(230, 230, 250);
+    padding: 0px;
+    list-style: none;
+    width: 200px;
+    display: none;
+}
+
+.listmenu li:hover ul.sub-menu-linhkien {
+    display: block;
+    left: 125px;
+    border-top: 50px;
+}
+
+.listmenu ul.sub-menu-linhkien a {
+    padding: 8px 15px;
+}
+
+.listmenu ul.sub-menu-linhkien li:last-child a {
+    border: none;
+}
+
+.listmenu ul.sub-menu-linhkien li:hover a {
+    border-bottom: 1px solid #ea1c00;
+}
+
+.listmenu ul.sub-menu-linhkien ul.sub-menu-linhkien {
+    left: 200px;
+}
+
+
+/* thiết lập border khi hover */
+
+.listmenu>li>a {
+    position: relative;
+}
+
+.listmenu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.listmenu>li:hover>a::before {
+    width: 0px;
+}
+
+
+/* end border khi hover */
+
+
+/* end css phần linh kiện */
+
+
+/* css cho banner */
+
+.row {
+    display: flex;
+    /* border: 5px solid #ff523b; */
+    max-width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+
+.col-2 {
+    display: flex;
+    right: 70px;
+}
+
+.row .col-2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* end css cho banner */
+
+
+/* css cho phần hotsale */
+
+.hotsale {
+    padding: 25px;
+    size: auto;
+}
+
+.ratting .fa {
+    color: #ff523b;
+}
+
+.bi-thermometer-sun {
+    color: #fff;
+}
+
+.col-4 {
+    display: inline-block;
+    text-align: center;
+}
+
+.col-4 img {
+    max-width: 100%;
+}
+
+h1.tille {
+    /* border-style: solid;
+    border-color: #ff523b;
+    border-width: 5px 5px 0px 5px;
+    background-color: #ff523b;
+    color: #fff;
+    background: #d7202c; */
+    margin: 0;
+    font-size: 22px;
+    background: #d7202c;
+    padding: 10px 20px;
+    color: #fff;
+    min-width: 100%;
+    line-height: 1.;
+    display: inline-block;
+}
+
+
+/* end CSS hotsale */
+
+
+/* css cho phần apple new */
+
+.category-apple img {
+    margin: 0px 320px;
+}
+
+
+/* end */
+
+
+/* css cho phần footer */
+
+.footer {
+    background: #f6f6f6;
+    padding: 20px 0;
+    display: inline;
+    text-align: left;
+    /* margin: 20px; */
+}
+
+#user1,
+#user2,
+#user3 {
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.col-sm-12 {
+    width: 100%;
+    float: left;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer p {
+    margin: 12px 0;
+    color: #333;
+}
+
+.footer hr {
+    display: flex;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-footer {
+    display: flex;
+    padding: 25px;
+}
+
+
+/* ----------------------*/
+
+.laptop {
+    position: relative;
+    display: inline-block;
+}
+
+.laptopbtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-laptop {
+    display: none;
+    position: absolute;
+    background-color: #e9d8f4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-laptop a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.laptop a:hover {
+    background-color: #58257b;
+    color: white;
+}
+
+.laptop:hover .menu-laptop {
+    display: inline-block;
+}
+
+
+/**/
+
+.banphim {
+    position: relative;
+    display: inline-block;
+}
+
+.banphimbtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-banphim {
+    display: none;
+    position: absolute;
+    background-color: #e9d8f4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-banphim a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.banphim a:hover {
+    background-color: #58257b;
+    color: white;
+}
+
+.banphim:hover .menu-banphim {
+    display: inline-block;
+}
+
+
+/**/
+
+.chuot {
+    position: relative;
+    display: inline-block;
+}
+
+.chuotbtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-chuot {
+    display: none;
+    position: absolute;
+    background-color: #e9d8f4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-chuot a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.chuot a:hover {
+    background-color: #58257b;
+    color: white;
+}
+
+.chuot:hover .menu-chuot {
+    display: inline-block;
+}
+
+
+/**/
+
+.manhinh {
+    position: relative;
+    display: inline-block;
+}
+
+.manhinhbtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/**/
+
+.loa {
+    position: relative;
+    display: inline-block;
+}
+
+.loabtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/**/
+
+.linhkien {
+    position: relative;
+    display: inline-block;
+}
+
+.linhkienbtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-linhkien {
+    display: none;
+    position: absolute;
+    background-color: #e9d8f4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-linhkien a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.linhkien a:hover {
+    background-color: #58257b;
+    color: white;
+}
+
+.linhkien:hover .menu-linhkien {
+    display: inline-block;
+}
+
+.Left {
+    float: left;
+    border: 2px solid #7FFF00;
+    background-color: #87CEFF;
+    border-radius: 10px;
+    width: 130px;
+    height: 300px;
+}
+
+.Center {
+    float: left;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 800px;
+    height: 300px;
+}
+
+.Right {
+    float: left;
+    margin-left: 10px;
+    border: 2px solid none;
+    border-radius: 10px;
+    width: 276px;
+    height: 300px;
+}
+
+.duongvien {
+    float: left;
+    width: 1200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-left {
+    float: left;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin-top: 7px;
+    width: 400px;
+    height: 160px;
+}
+
+.footer-center {
+    float: left;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 400px;
+    height: 160px;
+}
+
+.footer-right {
+    float: left;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 400px;
+    height: 160px;
+}
